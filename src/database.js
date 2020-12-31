@@ -8,6 +8,6 @@ import mongoose from 'mongoose';
             useCreateIndex: true,
             useFindAndModify: false
         })
-        console.log( 'Database is connected', db.connection.name );
+        console.log( 'Database is connected:', db.connection.name );
     }
 )();

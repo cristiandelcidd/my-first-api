@@ -28,7 +28,7 @@ userSchema.statics.hashPassword = async ( password ) => {
 }
 
 userSchema.methods.hidePassword = () => {
-    
+
 }
 
 export default model( 'User', userSchema );

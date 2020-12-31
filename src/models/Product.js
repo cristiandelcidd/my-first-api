@@ -6,14 +6,15 @@ const productSchema = new Schema({
         required: true
     },
     category: {
-        type: String
+        type: Schema.Types.ObjectId,
+        ref: 'Category'
     },
     price: {
         type: Number,
         required: true
     },
     user: [{
-        type: Schema.ObjectId,
+        type: Schema.Types.ObjectId,
         ref: 'User'
     }]
 }, {
